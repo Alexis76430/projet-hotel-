@@ -236,7 +236,7 @@ display: inline-block;
 }
 
 .tm-res{
-    background: #cc4151;
+    background: var(--secondary);
     padding: 2%;
 }
 .tm-resbutton p{
@@ -255,7 +255,7 @@ display: inline-block;
 }
 
 .tm-resbutton p:hover{
-    color: #ec3c6a;
+    color: var(--primary);
     background: #fff;
 }
 
