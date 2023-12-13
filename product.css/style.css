@@ -118,6 +118,147 @@ section{
 
 
 /***** End*******/
+.tm-rooms:focus {
+    outline: none;
+}
+.tm-rooms a:focus {
+    outline: none;
+}
+
+.tm-rooms{
+    display: block;
+    background: #353535;
+    max-width: 33.33%;
+    width: 33.33%;
+}
+
+
+.tm-rooms img{
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+.tm-rooms p{
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+padding: 5%;
+
+  
+}
+
+.tm-rooms a{
+    text-decoration: none;
+}
+
+.tm-rooms a p:hover{
+    color: #ec3c6a;
+
+
+}
+
+.s{
+    padding-bottom: 1%;
+}
+
+.flex{
+    display: flex;
+}
+
+.tm-roomsection{
+    display: flex;
+}
+
+.tm-room1{
+    max-width: 33.33333%;
+    width: 33.333333%;
+    background: #353535;
+    
+display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+
+.tm-room1 p{
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+    padding: 5%;
+    z-index: 2;
+    position: relative;
+}
+
+
+.tm-roomimage{
+    max-width: 100%;
+    width: 100%;    
+}
+
+.tm-trans{
+    display: inline-block;
+    position: absolute;
+    top: 78%; /*78*/
+   color: #fff;
+     max-width: 100%;
+    width: 100%;
+    height: 0%; /*0*/
+     background: rgba(53, 53, 53,0.7);
+    opacity: 0; /*0*/
+}
+
+.tm-trans p{
+    font-size: 1.8vw;
+
+}
+.tm-trans div{
+    display: inline-table;
+    width: 40%;
+    max-width: 40%;
+    margin: 2%;
+}
+
+.tm-trans div .bold{
+    color: #ff8d9a;
+
+}
+
+
+.tm-room1:hover .tm-trans{
+ 
+    top:30%;
+   
+    transition: top 1s, opacity 1s, height 1s;
+       opacity: 1;
+     height: 50%;
+    z-index: 1;
+}
+
+.tm-res{
+    background: #cc4151;
+    padding: 2%;
+}
+.tm-resbutton p{
+    display: table;
+    max-width: 30%;
+    margin: 0 auto;
+    font-size: 2.5vw;
+     padding: 2%;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #fff;
+   
+}
+.tm-resbutton a{
+     text-decoration: none;
+}
+
+.tm-resbutton p:hover{
+    color: #ec3c6a;
+    background: #fff;
+}
+
 
 
 /***** Home*******/
@@ -372,8 +513,9 @@ section{
 }
 
 .review .row .box{
-    width: 400px;
-    height: 500px;
+    box-shadow: var(--box-shadow);
+    width: 300px;
+    height: 750px;
     margin: 20px;
     background: #fff;
     display: flex;
@@ -385,8 +527,9 @@ section{
 }
 
 .review .row .box .imbox{
-    width: 80px;
-    height: 80px;
+    
+    width: 150px;
+    height: 150px;
     border-radius: 50px;
     position: relative;
     margin-bottom: 20px;
@@ -407,14 +550,13 @@ section{
 .review .row .box .text{
     text-align: center;
     color: #666;
-    font-style: italic;
     font-size: 2rem;
 }
 
 .review .row .box .text h3{
-    color: var(--primary);
+    color: var(--black);
     margin-top: 20px;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: 600;
 }
 
@@ -505,14 +647,15 @@ display: inline-block;
 }
 
 .contactform{
-    padding: 75px 50px;
+    padding: 75px 75px;
     background: #fff;
     box-shadow: 5px 15px 50px rgba(0,0,0, 0.8);
     max-width: 500px;
     margin-top: 50px;
     justify-content: center;
     align-items: center;
-    margin-left: 38%;
+    margin-left: 25%;
+    margin-bottom: 80px;
 }
 
 .contactform .inputboite{
@@ -543,7 +686,8 @@ display: inline-block;
     font-size: 1em;
     font-weight: 700;
     color: #ffff;
-    background: #fb911f;
+    background: var(--primary);
+    border-radius: 15px;
     display: inline-block;
     cursor: pointer;
     text-transform: uppercase;
